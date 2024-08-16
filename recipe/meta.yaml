@@ -1,13 +1,13 @@
 {% set name = "napari-vedo-bridge" %}
-{% set version = "0.0.4" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-vedo-bridge-{{ version }}.tar.gz
-  sha256: 7b84a6c01b91a135c1040e2fbe34d66b03b2eeda9cae23c6d6690593325e9997
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 147d64f9e426ef7b6ee4a63071746a9da509b6a703aa55f4f17312e3474f0719
 
 build:
   noarch: python
